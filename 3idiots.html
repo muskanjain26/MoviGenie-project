@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">3 IDIOTS</h2>
+</div>
+
+<div class="movie">
+ <img src="3idiots.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">Rancho, Raju and Farhan enter the elite engineering college, only to learn lessons of life that cannot be taught through books and classrooms. Principal Viru Sahastrabuddhe is no help at all.
+
+Rest assured, all ye desi cinema buffs, Aal Izz Well in apna Bollywood. If 2009 can begin with Dev D and end with 3 Idiots, it is indeed time to sound the seetis and taalis for one of the most exciting years of contemporary Indian cinema. Truly, this has been the year of the I.d.i.o.t in movielore: the Intrinsically intelligent, Downright smart, Inimitable, Original and Talented film maker, actor, story teller, musician, lyricist, dialogue writer and producer.
+</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them "idiots"..<br>CAST: Rajkumar Hirani, Amir Khan, R.Madhavan, Mona Singh</p>
+
+</div>
+
+</body>
+</html>
+

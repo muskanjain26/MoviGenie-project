@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+</head>
+<body bgcolor="black">
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">TOY STORY</h2>
+</div>
+
+<div class="movie">
+ <img src="toystory.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">Toy Story is the film that started Pixar Animated Studios into its long string of never ending success. What Pixar does is not just absorb the younger demographic and keep the older ones mildly entertained. It completely absorbs everyone watching no matter the age or the level of maturity, films of Pixar, starting from Toy Story, have kept a certain magical touch around it with an unexpected amount of depth. Everyone as a child imagines their toys will come alive and go on their own adventures. One of the great things Pixar does is that it does not attract audiences with its overloaded superstar casts but rather with its material. The only superstar here is Tom Hanks and Tim Allen is the next most aforementioned voice over. Unlike what most people think their is an actually a method to casting for animated films as there is to a live-action one. As a result of this Pixar stays faithful to its material and creates a great genuine and warm feeling around the film and its characters.
+</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 7.8 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY:Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.
+   </p>
+</div>
+
+</body>
+</html>
+

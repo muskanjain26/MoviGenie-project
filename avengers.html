@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+</head>
+<body bgcolor="black">
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">AVENGERS</h2>
+</div>
+
+<div class="movie">
+ <img src="avengers.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">One just gets the sense that this movie took a subtle yet noticeable shift away from what captured many people's hearts in the earlier MCU movies.
+
+The actors give off the feeling of being forced to portray a role that used to be natural fits in order to impose various woke messages. There are so many but they come at a rate of every couple of minutes, ranging from blatant grrl power, to emasculation and so on. Muddling along.
+
+Aside from the odd action scenes, this movie could pass as a drama</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 8.2 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY:When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury's "dream team" are Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).
+   </p>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,151 @@
+iframe{
+	border:10px solid lightslategrey;
+}
+table{
+	border-color: black;
+	border: solid 2px;
+	text-align: left;
+
+}
+
+.color{
+	background-color: lightgrey;
+
+}
+.hi{
+	background-color: darkgrey;
+}
+.link{
+	background-color: darkgrey;
+}
+#header{
+	background-color: grey;
+	
+}
+p{
+	align-content: right;
+}
+#main{
+	border: 2px solid;
+	border-color: white;
+	margin:6%;	
+	background-color: white;
+}
+body{
+	background-color: rgb(122,135,144);
+}
+tr{
+	pad
+}
+
+
+#right{
+	border:2px dotted darkslategrey;
+	/*margin-left: 70%;*/
+	display: inline-block;
+	width: 40%;
+
+
+	
+	margin-right: 2%;
+	margin-bottom: 2%;
+	padding: 1%
+}
+
+#vbn{
+	border: 5px inset grey;
+	text-align: center;
+	margin: 1%
+}
+
+#info{
+	text-align: center;
+	display: inline-block;
+	width: 40%;
+	padding: 50px;
+	margin-top: 
+}
+table{
+	margin-right: 1%
+
+}
+.img{
+	border:6px darkslategrey solid;
+
+}
+
+
+#intias,#iasint{
+	text-align: center;
+	display: inline-block;
+	width: 80%;
+}
+
+
+input[type=text]:enabled {
+background: aqua;
+}
+
+input:focus {
+background-color: black;
+}
+a:hover {
+background-color: aqua;
+}
+a:visited {
+color: slateblue;
+}
+a:active {
+background-color: orange;
+}
+
+::radio {
+color: red;
+background: yellow;
+}
+
+legend{
+	font-style: italic;
+	color: lightslategrey;
+	text-shadow: 2px 2px aqua;
+}
+#title{
+	font-style: italic;
+	text-shadow: 2px 2px aqua;
+
+}
+.h1{
+	font-style: italic;
+	text-shadow: 2px 2px aqua;
+}
+
+h2{
+	color: lightslategrey;
+	text-shadow: 2px 2px aqua;
+}
+.a{
+	background-color: aliceblue
+
+}
+.b{
+	background-color: aliceblue
+}
+
+.d{
+	background-color: whitesmoke;
+}
+.e,.f{
+	background-color: linen;
+}
+#mark{
+	font-style: italic;
+	color: lightcyan;
+	text-shadow: 2px 2px black
+}
+.v{
+	background-color: whitesmoke
+}
+
+
+
+

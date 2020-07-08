@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+</head>
+<body bgcolor="black">
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">BATMAN DARK KNIGHT</h2>
+</div>
+
+<div class="movie">
+ <img src="darkknight.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">I couldn't believe "The Dark knight" could live up to the hype. That's perhaps the biggest surprise. The secret, I believe, is a stunning, mature, intelligent script. That makes it the best superhero movie ever made. As if that wasn't enough, Heath Ledger. He, the newest of the tragic modern icons present us with a preview of something we'll never see. A fearless, extraordinary actor capable to fill up with humanity even the most grotesque of villains. His performance is a master class. Fortunately, Christian Bale's Batman is almost a supporting character. Bale is good but there is something around his mouth that stops him from being great. "The Dark Knight" is visually stunning, powerful and moving. What else could anyone want.</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on
+   crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.</p>
+</div>
+
+</body>
+</html>

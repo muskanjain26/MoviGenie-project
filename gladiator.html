@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+</head>
+<body bgcolor="black">
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">GLADIATOR</h2>
+</div>
+
+<div class="movie">
+ <img src="gladiator.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">Once again, Director Ridley Scott proves to be as professional as one can be. The recreation of ancient Rome is splendid, with all its magnificent buildings and atmosphere and he is able to show with all brightness the greatness of the Roman Empire, with its political problems and military discipline, and love and treason, of hate and jealousy, that still have a place in our world today. But the story has a glow of its own, to which all the beautiful scenery (believe me, it's awesome!!!) and great cinematography are just balancing factors. The plot is a rich one, that is as dynamic as it is present. He once again, after Blade Runner, 1492, and others helps us visit the depths of the human soul, which remains the same over all our historical and social experience. Even the fights, are displayed in such a way that all the blood is quite discrete, but still, making us feel like screaming and jumping out of our seats. I would also like to point out the performances of the cast, that is surprisingly good. We have some actors and actresses, who are not Hollywood icons, but are are greatly able to move the audience among screams and tears. All in all, we have guys like Russel Crowe, who are coming out to be part of a new and extremely promising harvest of people who are making each time more fans around the world. Well, you should see for yourself!
+</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.2 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY:Set in Roman times, the story of a once-powerful general forced to become a common gladiator. The emperor's son is enraged when he is passed over as heir in favour of his father's favourite general. He kills his father and arranges the murder of the general's family, and the general is sold into slavery to be trained as a gladiator - but his subsequent popularity in the arena threatens the throne.
+    <br> <br>
+    CAST: Russell Crowe, Connie Nielsen, Joaquin Phoenix
+   </p>
+</div>
+
+</body>
+</html>

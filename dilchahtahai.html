@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">DIL CHAHTA HAI</h2>
+</div>
+
+<div class="movie">
+ <img src="dilchahtahai.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">This movie was released in the year 2001, the time when bollywood seemed to be in doldrums, producing one trash after another, the same year when another masterpiece "Lagaan" was released from bollywood and the year I finished my college and entered my first job and wow what an experience - it was just like a fresh breath of air.
+
+The first movie by an unknown young guy Farhan Akhtar (may be known earlier because of his famous parents Javed Akhtar - lyricist in this movie - and Honey Irani) and what a fantastic job he did both in direction and script writing. For me, he did a great job by experimenting with a novel idea, moving away from the well established norms of the bollywood industry and not presenting yet again melodramatic bollywood plot.
+
+The story revolves around three friends (supposedy born to very rich parents) - their relationship and their personal lifes - the guys with totally different natures and with their different meaning of life. However, the only thing that keeps them ever together is their never ending friendship.</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: Three close friends are separated after college due to their different approaches towards relationships. Akash goes to Australia, Sameer gets busy wooing a girl and Siddharth devotes himself to art.<br>CAST: Farhan Akhtar, Amir Khan, Saif Ali Khan, Akshay Khanna, Preity Zinta</p>
+
+</div>
+
+</body>
+</html>
+

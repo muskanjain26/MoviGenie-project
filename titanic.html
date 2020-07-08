@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+</head>
+<body bgcolor="black">
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">TITANIC</h2>
+</div>
+
+<div class="movie">
+ <img src="titanic.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">To all the miserable people who have done everything from complain about the dialogue, the budget, the this and the that....who wants to hear it? IF you missed the point of this beyond-beautiful movie, that's your loss. The rest of us who deeply love this movie do not care what you think. I am a thirthysomething guy who has seen thousands of movies in my life, and this one stands in its own entity, in my book. It was not supposed to be a documentary, or a completely factual account of what happened that night. It is the most amazing love story ever attempted. I know that it is the cynical 90's and the millennium has everyone in a tizzy, but come on. Someone on this comments board complained that it made too much money! How lame is that? It made bundles of money in every civilized country on the planet, and is the top grossing film in the planet. I will gladly side with the majority this time around. Okay, cynics, time to crawl back under your rock, I am done.
+</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 8.8 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY:James Cameron's "Titanic" is an epic, action-packed romance set against the ill-fated maiden voyage of the R.M.S. Titanic; the pride and joy of the White Star Line and, at the time, the largest moving object ever built. She was the most luxurious liner of her era -- the "ship of dreams" -- which ultimately carried over 1,500 people to their death in the ice cold waters of the North Atlantic in the early hours of April 15, 1912
+   </p>
+</div>
+
+</body>
+</html>

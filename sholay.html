@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">SHOLAY</h2>
+</div>
+
+<div class="movie">
+ <img src="sholay.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">Sholay is a 1975 classic Bollywood blockbuster. A lot of factors have contributed in making this movie a superhit, starting with an A-OK cast showing Dharmendra as the playful Veeru, Amitabh Bachchan as the witty Jai, Sanjeev Kumar as the revengeful Thakur Baldev Singh, Hema Malini as the yapper Basanti, Jaya Bhaduri as the quiet widow Radha and Amjad Khan as the notorious Gabbar Singh.
+
+Written by the duo Salim–Javed (known for works such as Deewar, Mr. India, Zanjeer, among others),  Sholay was produced by G.P. Sippy and directed by Ramesh Sippy. Music maestro R.D. Burman was the man behind the movie’s background score. His songs such as “mehbooba” and “holi ke din” are listened till date. The timeless song on the bond of friendship, “yeh dosti” is popular even among today’s youth.
+
+Composed of a good plot, Sholay is a movie well told. The bold characters depict how a retired policeman, with the help of two smart con men, plan the downfall of a wicked dacoit. Interwoven within the story are instances of humour, action, and melodrama. With mausi’s shrewd remarks, Soorma Bhopali’s  impeccable Bhopali accent, and a comical jailer from angrezon ka zamana, Sholay makes for a good laugh. A celebrated movie in the Indian cinema, many of its dialogues have become a part of our lingo, and even a way of life! Haven’t we all heard the phrase “Jo darr gaya samjho marr gaya” at some point in our lives?
+
+Performances by all actors are up to the mark, making even the roles of Kaalia and Sambha significant. Amjad Khan, who gained popularity after his villainous role in the movie, has portrayed the daring  Gabbar Singh aptly. All the other lead actors also deserve a round of applause. The movie was shot in Ramnagaram near Bangalore, sometimes fondly remembered as Sippynagar. Keeping in mind the technology of the time, Sholay (especially the action sequences) is very well directed, owing to a commendable cinematography. No wonder it was one of the highest grossing movies of its time!
+
+Overall, the movie is first rate, a must watch for all. Being a perfect blend of all cinematic elements, it offers thorough entertainment. All the movie buffs out there, don’t miss it! For those who plan on not watching it..tera kya hoga Kaalia?!
+</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: Jai and Veeru, two ex-convicts, are hired by Thakur Baldev Singh, a retired policeman, to help him nab Gabbar Singh, a notorious dacoit who has spread havoc in the village of Ramgarh.<br>CAST: Amitabh Bacchan, Jaya Bacchan, Hema Malini, Sanjeev</p>
+
+</div>
+
+</body>
+</html>
+

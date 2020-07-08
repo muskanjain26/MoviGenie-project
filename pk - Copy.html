@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">PK</h2>
+</div>
+
+<div class="movie">
+ <img src="pk.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">PK is as much a philosophy as a film. It takes the 'stranded alien' theme, familiar from classics like ET, but tells the tale equally from the lonely alien's eyes - at times, evoking the beautiful story The Little Prince - as from his human narrator's. Starting with the alien's desperation, PK captures the fears and falsehoods humans weave around faith. When PK decides to pray for his remote, he's bewildered about whom to and how to pray. PK features brave scenes - money extracted at temples, coconuts offered in confusion at a church, god-men doling out tortuous advice - and strong lines, including a Muslim girl bravely asserting, "Itna chota nahin ho sakta hamara khuda, ki use hamare school jaane pe aitraaz ho." Capturing faith whipped into hate, PK's sterling message, directed sensitively, stands out.
+
+As does Aamir Khan as the wide-eyed alien bemused by human life, a paan-chomping Chaplin from outer space, liked by rustic Bhairon Singh (Sanjay Dutt in a warming cameo). PK's simplicity contrasts with Jaggu's complicated life, heartbroken after she thinks her Pakistani boyfriend Sarfaraz (Sushant) ditched her in chocolate-box Belgium. Tapasvi warned Jaggu's father (Parikshet Sahani) that her Muslim lover would betray her - does PK prove him wrong?
+
+Anushka presents a sprightly show while Boman Irani stands out as a TV channel head. Some supporting acts and special effects could've been sharper though while at points, editor Raju Hirani should've been sterner with director Raju Hirani in trimming tighter scenes. Between gods, frauds, love and bombs, there are multiple threads here. Some distract, others impact, like PK hilariously dazed by humans hiding when they make out - except when they announce it with band-baaja on their wedding day.</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: PK is as much a philosophy as a film. It takes the 'stranded alien' theme, familiar from classics like ET, but tells the tale equally from the lonely alien's eyes.<br>CAST:Rajkumar Hirani, Amir Khan, Anuska Sharma, Suhant Singh Rajput</p>
+
+</div>
+
+</body>
+</html>
+

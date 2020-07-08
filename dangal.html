@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Sacramento|Yrsa&display=swap" rel="stylesheet">
+<style>
+body {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+</style>
+<script>
+  function validateRating(){
+    var x= document.forms["myRateing"]["rating"].value;
+    if(x==null||x==""){
+      window.alert("Rating must be filled with a number");
+      }
+    else if(x>10){
+      window.alert("Rating must be given out of 10");
+
+    }
+    else{
+      window.alert("The rating is accepted");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<div class="movie">
+  <h2 align="center" style="background-color: #BC8F8F; font-size:45px; border:3px solid black">DANGAL</h2>
+</div>
+
+<div class="movie">
+ <img src="dangal.jpg" style="float:right; text-align: right ; border:3px solid white; height:450px; width:230px">
+  <p align="left" style="font-size:20px; background-color:#696969; color: white; padding:35px; border:1px solid black">Mahavir Phogat (Aamir Khan) lives in a village in Haryana with his wife Daya (Sakshi). Mahavir is an amateur wrestler and has won several local championships. However, he has to give up professional wrestling because he takes up a job to feed his family.
+
+However, wrestling never really leaves him. Mahavir dreams of the day when he will sire a son who will bring a gold medal for India. Unfortunately his wife gives birth to four daughters, the first two of who are Geeta (Fatima) and Babita (Sanya).
+
+Mahavir's brother also lives with him. He has a son who is of the same age as Geeta and Babita.
+
+One day when Mahavir and his wife return from the market, some villagers bitterly complain to him about how their sons have been beaten up. Mahavir assumes that his nephew has beaten up those boys. However, he soon realises that it is his older daughters who have done this.
+He apologies to the villagers and he reprimands his nephew. After the villagers have left, he smiles. He suddenly realises that he doesn't need a son to train in wrestling. Even his daughters can do Dangal.
+
+From the very next morning, Mahavir begins training his daughters. The young school going girls hate their boot camp. It is tough. And they are constantly falling asleep in school because they are so tired.
+
+They also get teased in school for walking like men. One day the girls decide to trick their father and not wake up for the training.
+
+They change the time on the alarm clock and sleep peacefully. They also make excuses of how their long hair is causing issues in the training.
+Aamir then gets a local barber to cut his daughters' long tresses. The girls plead but he doesn't pay heed.
+
+In school, the girls get teased. They hate their father for making them going through so much embarrassment. One day they attend a school mate's wedding without telling their father. When they tell their friend who is getting married how they hate their father for making them going through the wrestling training, she replies that it was nice of their father to at least give them some training, unlike her who was being forced to marry at the age of 14.
+
+The girls learn to appreciate their dad. Next morning they set off for training and from then on, they train real hard. Aamir allows them to wear shorts for the training and he even allows them to eat chicken.
+
+Once he thinks they are ready, he gets Geeta to participate in her first Dangal where she beats a local pehelwan and wins Rs 50. Aamir preserves this 50 rupees in an album.
+
+After this Geeta wins several tournaments and even wins a gold. When she grows up she goes to the National Sports Academy in Patiala and participates in several international tournaments. However, Geeta loses sight of her goal and becomes lax. She loses four big tournaments in Moscow, Indonesia and other places. Her father is upset but he is not keen to talk to her.
+
+In the meantime Babita also becomes a professional wrestler and wins local championships. Babita also qualifies to go to the NSA. Here she sees how her older sister has lost her way. She gets her sister to come back on track by patching up with her father, who has moved to Patiala with their cousin.
+
+While the sports coach trains them at the Academy, their father gives them lessons outside.
+
+When it is time for the Commonwealth Games Geeta has to wrestle with Angela Watson, to whom she had lost earlier.
+
+Spoiler alert ahead: Read only if you have seen the film
+
+Geeta almost loses her match because her coach asks her to defend only. However, her father asks her to attack or defend depending on how the opponent plays it. Just before the final match, the coach plays dirty and gets Mahavir locked up in the stadium so that he is not present in the stands when Geeta is doing her final round.
+
+Geeta is lost without her father's assurance. However, she remembers a piece of advice he once gave her. She remembers him telling her that she must make her own path and that he would not always be around to save her. Geeta then comes into her own and defeats the Australian. She becomes the first girl to bring India glory as a professional wrestler in the 55 kilos category. Her sister Babita wins the silver in the 51 kilos category. India's daughters do the country proud. Post this, the girls won several medals and have inspired women across the country to try their hand at professional wrestling.</p>
+  <br> <br>
+  
+  <p></p>
+</div>
+<form style="background-color:darkgrey; padding: 20px" align="center" name="myRateing" onsubmit="return validateRating()" method="post"  border="5px solid black">
+  Rate: <input type="text" name="rating">
+        <input type="submit" value="submit">
+</form>
+<br><br>
+
+<div class="movie" style="font-size:20px; background-color:#696969; color: white; padding:35px">
+  <h2 style="font-size:25px">RATING : 9.1 </h2>
+  <p style="font-size:18px; background-color:#696969; color: white; padding:20px ;border:1px solid black"> SUMMARY: Dangal manages to engage the viewer with the wrestling tournaments and bring patriotic emotions to the fore.<br>CAST: Amir Khan, Nitesh Tiwari, Sanya Malhotra</p>
+
+</div>
+
+</body>
+</html>
+
